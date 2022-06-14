@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("//db.onlinewebfonts.com/t/924ee4158324c02e3e0d62e54cafd14f.eot");
+  src: url("//db.onlinewebfonts.com/t/924ee4158324c02e3e0d62e54cafd14f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/924ee4158324c02e3e0d62e54cafd14f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/924ee4158324c02e3e0d62e54cafd14f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/924ee4158324c02e3e0d62e54cafd14f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/924ee4158324c02e3e0d62e54cafd14f.svg#Gotham Book")
+      format("svg");
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+
+    ALERT
+
+*/
+
+.alert {
+    background-color: white;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.alert__para {
+    cursor: pointer;
+    font-family: 'Gotham Book';
+    font-size: 14px;
+    border-bottom: 1px solid #272727;
+    color: #272727;
+    transition: all 0.2s ease; 
+}
+
+.alert__para:hover {
+    border-width: 2px;
+}
+
+/*
+
+    NAVBAR
+
+*/
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar__logo--img {
+    width: 100%;
+}
+
+.navbar__middle--list, .navbar__end--list {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar__middle--link, .navbar__end--link {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Gotham Book';
+    color: #272727;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+}
+
+.navbar__middle--link:hover, .navbar__end--link:hover {
+    background-color: #75757525;
+}
+
+/*
+
+    MODEL
+
+*/
+
+.model__wrapper {
+    padding-top: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.model {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.model__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.model__description--title {
+    font-family: "Gotham Book";
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.model__description--para {
+    font-family: "Gotham Book";
+}
+
+.model__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.model__buttons {
+    display: flex;
+    gap: 24px;
+}
+
+.model__buttons--btn {
+    cursor: pointer;
+    padding: 8px 12px;
+    width: 264px;
+    height: 40px;
+    border: none;
+    border-radius: 24px;
+}
+
+.model__buttons .light {
+    background-color: #f4f4f4a6;
+    color: #393c41;
+}
+
+.model__buttons .dark {
+    background-color: #171a20cc;
+    color: #ffffff;
+}
+
+.model__bottom--pointer {
+    position: absolute;
+    bottom: 0;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fa-angle-down {
+    cursor: pointer;
+    color: #272727;
+    font-size: 24px;
+    animation: swipedown 3s infinite;
+}
+
+@keyframes swipedown {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*
+
+    BACKGROUNDS
+
+*/
+
+.model3 {
+    background-image: url('./assets/model-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modely {
+    background-image: url('./assets/model-y.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.models {
+    background-image: url('./assets/model-s.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modelx {
+    background-image: url('./assets/model-x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
